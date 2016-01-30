@@ -1,5 +1,5 @@
 ﻿{
     "paths": [
-        { "id": "Home Page", "path": "index.html" }
+        { "id": "Home Page", "path": "home.html" }
     ]
 }

@@ -164,12 +164,7 @@ module.exports = function (grunt) {
             },
             dev: {
                 options: {
-                    dir: '<%= project.dirs.scripts.out %>',
-                    paths: {
-                        'jquery': 'empty',
-                        'videojs': 'empty',
-                        'moment': 'empty'
-                    }
+                    dir: '<%= project.dirs.scripts.out %>'
                 }
             }
         },
@@ -262,7 +257,7 @@ module.exports = function (grunt) {
     grunt.registerTask('css', ["sass:dev", "autoprefixer"]);
 
     // JavaScript Tasks
-    grunt.registerTask('js', ["handlebars"]);
+    grunt.registerTask('js', ["handlebars", "requirejs"]);
 
     // Image Tasks
     grunt.registerTask('img', ["copy"]);

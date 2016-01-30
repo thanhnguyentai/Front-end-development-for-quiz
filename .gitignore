@@ -7,6 +7,13 @@ bower_components/
 #Design
 design/
 
+#Build files
+css/screen.css
+css/screen.css.map
+fonts/
+js/
+*.html
+
 *.log
 *.min.css
 *.map
