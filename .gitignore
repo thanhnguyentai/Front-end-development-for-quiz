@@ -1,0 +1,12 @@
+#Grunt
+node_modules/
+
+#Bower
+bower_components/
+
+#Design
+design/
+
+*.log
+*.min.css
+*.map
