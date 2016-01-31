@@ -1,0 +1,150 @@
+$menuHeight: 70px;
+
+.menu {
+	&-container{
+		background-color: #00264c;
+		border-radius: 0;
+		border: none;
+
+		.navbar-brand{
+			@include verticle-middle();
+			height: rem($menuHeight);
+			padding-left: rem(25px);
+
+			@include respond-to-min($desktopSize){
+				padding-left: rem(40px);
+				padding-right: rem(40px);
+			}
+
+			img{
+				display: inline-block;
+			}
+		}
+
+		.navbar-toggle{
+			background-color: #00468c;
+			width: rem(73px);
+			height: rem($menuHeight);
+			margin: 0;
+			border-radius: 0;
+			border: none;
+			padding-left: rem(26px);
+			padding-right: rem(26px);
+
+			&[aria-expanded=true]{
+				.icon-bar{
+					&:nth-child(1){
+						display: none;
+					}
+					&:nth-child(2){
+						transform: rotate(45deg);
+						margin-top: 0;
+					}
+					&:nth-child(3){
+						transform: rotate(-45deg);
+						margin-top: rem(-2px);
+					}
+				}
+			}
+
+			.icon-bar{
+				background-color: #fff;
+				width: 100%;
+				transition: transform linear 0.1s;
+			}
+		}
+
+		.navbar-collapse{
+			border: none;
+			position: absolute;
+			z-index: 100;
+			left: rem(15px);
+			top: rem(70px);
+			margin: rem(0 -15px);
+			width: 100%;
+
+			@include respond-to-min($tabletSize){
+				position: inherit;
+				left: auto;
+				top: auto;
+				width: auto;
+			}
+		}
+
+		.navbar-nav{
+			margin-top: 0;
+			margin-bottom: 0;
+
+			li{
+				&:nth-child(2n+1){
+					background-color: #004080;
+				}
+				&:nth-child(2n){
+					background-color: #003366;
+				}
+
+				@include respond-to-min($tabletSize){
+					&:nth-child(2n+1){
+						background-color: #003366;
+					}
+					&:nth-child(2n){
+						background-color: #004080;
+					}
+				}
+
+				&.active{
+					a::after{
+						content: '';
+						width: rem(22px);
+						height: rem(2px);
+						background-color: #fff;
+						position: absolute;
+						left: 50%;
+						margin-left: rem(-11px);
+						top: rem(45px);
+
+						@include respond-to-min($tabletSize){
+							top: rem(50px);
+						}
+					}
+				}
+			}
+
+			a{
+				@include openSansNormal();
+				color: #fff;
+				font-size: rem(15px);
+				line-height: rem(20px);
+				padding-top: rem(20px);
+				padding-bottom: rem(20px);
+				text-align: center;
+				position: relative;
+				text-transform: uppercase;
+
+				&:hover{
+					background: none;
+					color: #fff;
+
+					&::after{
+						content: '';
+						width: rem(22px);
+						height: rem(2px);
+						background-color: #fff;
+						position: absolute;
+						left: 50%;
+						margin-left: rem(-11px);
+						top: rem(45px);
+
+						@include respond-to-min($tabletSize){
+							top: rem(50px);
+						}
+					}
+				}
+
+				@include respond-to-min($tabletSize){
+					padding: rem(25px 30px);
+				}
+			}
+		}
+	}
+}

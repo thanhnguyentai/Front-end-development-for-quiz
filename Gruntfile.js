@@ -272,7 +272,7 @@ module.exports = function (grunt) {
     grunt.registerTask('deploycss', ["cssmin"]);
 
     //grunt.registerTask('build', ['clean', 'assemble', "sass:dev", "cssmin", "requirejs:dev", "copy","watch"]);
-    grunt.registerTask('build', ['clean', 'static', "css", "js", "copy"]);
+    grunt.registerTask('build', ['clean', 'static', "css", "js", "copy", "watch"]);
 
     // default task when calling "grunt" => call task build
     grunt.registerTask('default', ['build']);

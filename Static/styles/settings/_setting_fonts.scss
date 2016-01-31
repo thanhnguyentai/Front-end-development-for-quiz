@@ -6,29 +6,15 @@
   font-style: normal;
 }
 
-@mixin latoThin(){
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-}
 
-@mixin latoLight(){
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-
-@mixin latoNormal(){
-    font-family: 'Lato', sans-serif;
+@mixin openSansNormal(){
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
-@mixin latoBold(){
-    font-family: 'Lato', sans-serif;
+@mixin openSansBold(){
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-}
-
-@mixin latoBlack(){
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
 }
 
 @mixin arial(){
