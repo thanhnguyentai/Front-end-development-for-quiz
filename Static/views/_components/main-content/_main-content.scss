@@ -103,6 +103,10 @@
 			padding: rem(30px 60px 20px 0);
 		}
 
+		@include respond-to-min($largeSize){
+			padding: rem(50px 60px 20px 0);
+		}
+
 		@include respond-to-min($maxWidthContent){
 			padding: rem(80px 100px 20px 0);
 		}
