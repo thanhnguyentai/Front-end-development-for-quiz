@@ -23,13 +23,13 @@ $menuHeight: 70px;
 
 		.navbar-toggle{
 			background-color: #00468c;
-			width: rem(73px);
+			width: rem(60px);
 			height: rem($menuHeight);
 			margin: 0;
 			border-radius: 0;
 			border: none;
-			padding-left: rem(26px);
-			padding-right: rem(26px);
+			padding-left: rem(20px);
+			padding-right: rem(20px);
 
 			&[aria-expanded=true]{
 				.icon-bar{
@@ -45,6 +45,12 @@ $menuHeight: 70px;
 						margin-top: rem(-2px);
 					}
 				}
+			}
+
+			@include respond-to-min(340px){
+				width: rem(73px);
+				padding-left: rem(26px);
+				padding-right: rem(26px);
 			}
 
 			.icon-bar{

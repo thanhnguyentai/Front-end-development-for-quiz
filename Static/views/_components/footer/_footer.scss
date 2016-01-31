@@ -1,0 +1,12 @@
+.footer-container{
+	p{
+		@include openSansNormal();
+		color: #333;
+		background-color: #e6e6e6;
+		font-size: rem(16px);
+		line-height: rem(20px);
+		text-align: center;
+		margin: 0;
+		padding: rem(20px 0);
+	}
+}
