@@ -1,40 +1,63 @@
-
-    <div class="container">
+<div class="main-content__container">
+  <div class="container-fluid">
       <div class="row">
-          <h1 class="lead text-center">Ships lights - Level 1</h1>
-      </div>
-      <div class="row">
-          <div class="col-xs-4">
-              Qu. 1 of 15
-          </div>
-          <div class="col-xs-4">
-              <strong></strong>
-          </div>
-          <div class="col-xs-4">
-              Score: 100%
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-xs-6">
-              <div class="questionMainImage">
-                  
+          <div class="col-md-6 main-content__column">
+              <div class="main-content__question-container">
+                <img class="main-content__question-image" src="img/question.jpg" alt="question image"/>  
+                <div class="main-content__question-navigation">
+                  <div class="main-content__question-navigation__left">
+                    <button class="btn-navigation btn-first">&nbsp;</button>
+                    <button class="btn-navigation btn-pre">&nbsp;</button>
+                  </div>
+                  <div class="main-content__question-navigation__right">
+                    <button class="btn-navigation btn-next">&nbsp;</button>
+                    <button class="btn-navigation btn-last">&nbsp;</button>
+                  </div>
+                  <div class="main-content__question-index">
+                    Question 1 of 15
+                  </div>
+                </div>
               </div>
           </div>
-          <div class="col-xs-6">
-              <div class="row-fluid">
-                  <ul id="optionsList" style="list-style:none;">
-                      <li></li>
-                  </ul>
+          <div class="col-md-6 main-content__column">
+            <div class="main-content__answer-container">
+              <div class="main-content__answer-title">Ship Lights -</div>
+              <h2 class="main-content__answer-level">Level 1</h2>
+              <ul class="main-content__answer-list">
+                  <li class="answer-correct">
+                    <div class="input-container">
+                      <input id="radio1" type="radio" name="answer-option"/>
+                      <label for="radio1">Uddybning og undervandsarbejde</label>
+                    </div>
+                    <span class="main-content__answer-option__status">Correct</span>
+                  </li>
+                  <li class="answer-incorrect">
+                    <div class="input-container">
+                      <input id="radio2" type="radio" name="answer-option"/>
+                      <label for="radio2">Minestryger</label>
+                    </div>
+                    <span class="main-content__answer-option__status">Incorrect</span>
+                  </li>
+                  <li>
+                    <div class="input-container">
+                      <input id="radio3" type="radio" name="answer-option"/>
+                      <label for="radio3">WIG-fartøj</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-container">
+                      <input id="radio4" type="radio" name="answer-option"/>
+                      <label for="radio4">Grundstøder</label>
+                    </div>
+                  </li>
+              </ul>
+              <div class="main-content__submit-container">
+                <button class="btn-submit">Submit</button>
+                <span class="main-content__question__status">Score: 100%</span>
               </div>
-              <div class="row-fluid text-center">
-                  <button class="btn btn-default next option">|&lt;</button>
-                  <button class="btn btn-default next option">&lt;</button>
-                  <button class="btn btn-default next option">&gt;</button>
-                  <button class="btn btn-default next option">&gt;|</button>
-                  &nbsp;
-                  <button class="btn btn-info option">Submit</button>
-              </div>
+            </div>
           </div>
       </div>
     </div>
+</div>
   

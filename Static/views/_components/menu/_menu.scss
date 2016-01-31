@@ -5,6 +5,7 @@ $menuHeight: 70px;
 		background-color: #00264c;
 		border-radius: 0;
 		border: none;
+		margin-bottom: 0;
 
 		.navbar-brand{
 			@include verticle-middle();
@@ -127,6 +128,10 @@ $menuHeight: 70px;
 				position: relative;
 				text-transform: uppercase;
 
+				&:focus{
+					background: none;
+					color: #fff;
+				}
 				&:hover{
 					background: none;
 					color: #fff;
